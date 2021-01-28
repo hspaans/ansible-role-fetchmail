@@ -1,2 +1,5 @@
 ---
-# handlers file for template
+- name: restart fetchmail
+  service:
+    name: "{{ fetchmail_service }}"
+    state: restarted

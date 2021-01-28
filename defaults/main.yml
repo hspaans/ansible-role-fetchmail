@@ -1,2 +1,10 @@
 ---
-# defaults file for template
+fetchmail_config_dir: /etc
+fetchmail_config_owner: fetchmail
+fetchmail_config_group: root
+fetchmail_config_mode: '0600'
+fetchmail_service_enabled: true
+fetchmail_service_name: fetchmail.service
+fetchmail_service_state: started
+fetchmail_packages:
+  - fetchmail
