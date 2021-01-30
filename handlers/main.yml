@@ -1,5 +1,5 @@
 ---
 - name: restart fetchmail
   service:
-    name: "{{ fetchmail_service }}"
+    name: "{{ fetchmail_service_name }}"
     state: restarted
