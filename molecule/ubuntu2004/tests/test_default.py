@@ -3,7 +3,7 @@
 import pytest
 
 
-@pytest.mark.parametrize("pkg", ["automysqlbackup"])
+@pytest.mark.parametrize("pkg", ["fetchmail"])
 def test_pkg_installed(host, pkg):
     package = host.package(pkg)
 

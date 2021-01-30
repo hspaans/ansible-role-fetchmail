@@ -12,5 +12,5 @@
   tasks:
     - name: Remove packages
       package:
-        name: automysqlbackup
+        name: fetchmail
         state: absent
