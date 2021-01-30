@@ -1,5 +1,14 @@
 ---
 - name: Converge
   hosts: all
+  vars:
+    fetchmail_config: |
+      poll imap.gmail.com protocol IMAP
+        user "example@gmail.com" is johndoe here
+        password 'mysecretpassword'
+        folder 'BUP'
+        fetchlimit 1
+        keep
+        ssl
   roles:
     - role: ansible-role-fetchmail
