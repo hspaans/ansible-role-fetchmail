@@ -1,6 +1,6 @@
 ---
 - name: Converge
-  hosts: all
+  hosts: localhost
   vars:
     fetchmail_config: |
       poll imap.gmail.com protocol IMAP
