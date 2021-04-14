@@ -32,7 +32,7 @@ jobs:
       matrix:
         ansible:
           - "ansible==2.9.*"
-          - "ansible==2.10.*"
+          - "ansible-base==2.10.*"
         distro:
           - debian9
           - debian10
