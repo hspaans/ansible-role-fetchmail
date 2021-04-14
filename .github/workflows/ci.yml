@@ -37,6 +37,7 @@ jobs:
         distro:
           - debian9
           - debian10
+          - debian11
           - ubuntu1804
           - ubuntu2004
 
