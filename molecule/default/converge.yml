@@ -11,4 +11,4 @@
         keep
         ssl
   roles:
-    - role: ansible-role-fetchmail
+    - role: hspaans.fetchmail
