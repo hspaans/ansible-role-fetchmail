@@ -1,5 +1,5 @@
 ---
-name: Release to Ansible Galaxy
+name: Release Ansible Role to Galaxy
 
 on:
   push:
@@ -11,12 +11,10 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
-
     steps:
       - name: Checkout
         uses: actions/checkout@v2
-
       - name: Release Ansible Role to Galaxy
-        uses: hspaans/ansible-galaxy-action@v0.2.8
+        uses: hspaans/ansible-galaxy-action@v0.2.9
         with:
           api_key: ${{ secrets.galaxy_api_key }}

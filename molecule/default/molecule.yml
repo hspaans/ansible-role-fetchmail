@@ -5,13 +5,12 @@ driver:
   name: docker
 lint: |
   set -e
-  export ANSIBLE_ROLES_PATH=${MOLECULE_PROJECT_DIRECTORY}/..
   yamllint .
-  ansible-lint
+  # ansible-lint
   flake8
 platforms:
   - name: instance
-    image: "ghcr.io/hspaans/molecule-container-debian:11"
+    image: "ghcr.io/hspaans/molecule-container-${MOLECULE_DISTRO}"
     command: ""
     volumes:
       - /sys/fs/cgroup:/sys/fs/cgroup:ro
