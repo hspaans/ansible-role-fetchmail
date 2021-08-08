@@ -1,6 +1,15 @@
+## Ansible
 *.retry
-*/__pycache__
-*.pyc
+.ansible_cache
+
+## Molecule
 .cache
-Pipfile
-Pipfile.lock
+.molecule
+.tox
+.vagrant
+
+## Python
+.pytest_cache/
+__pycache__/
+*.py[cod]
+*$py.class
