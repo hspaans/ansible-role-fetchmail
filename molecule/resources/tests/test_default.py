@@ -9,3 +9,4 @@ def test_pkg_installed(host, pkg):
     package = host.package(pkg)
 
     assert package.is_installed
+
