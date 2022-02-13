@@ -47,6 +47,17 @@ provisioner:
   playbooks:
     converge: ../resources/playbooks/converge.yml
     prepare: ../resources/playbooks/prepare.yml
+  inventory:
+    group_vars:
+      all:
+        fetchmail_config: |
+          poll imap.gmail.com protocol IMAP
+            user "example@gmail.com" is johndoe here
+            password 'mysecretpassword'
+            folder 'BUP'
+            fetchlimit 1
+            keep
+            ssl
 verifier:
   name: testinfra
   directory: ../resources/tests/
